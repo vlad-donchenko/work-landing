@@ -1,1 +1,11 @@
 @import "../global/variables";
+
+.site-header {
+  z-index: 10;
+}
+
+.site-header__wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $black-color;
+}

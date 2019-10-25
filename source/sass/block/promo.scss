@@ -1,0 +1,65 @@
+@import "../global/variables";
+
+.promo {
+  position: relative;
+  padding-top: 343px;
+  height: 100vh;
+  min-height: 980px;
+  color: $white-color;
+  z-index: 1;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($black-color, 0.7);
+    z-index: -1;
+  }
+}
+
+.promo__text {
+  font-weight: 500;
+  color: $white-color;
+  line-height: $base-line-height + 1px;
+  font-size: $base-font-size + 3px;
+  letter-spacing: 0.04em;
+}
+
+.promo__benefits {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 92px 0 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.promo__benefits li {
+  margin-right: 70px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.promo__number {
+  display: block;
+  margin-bottom: 9px;
+  font-weight: 500;
+  font-size: $base-font-size * 2 - 2px;
+  line-height: $base-line-height + 8px;
+}
+
+.promo__benefits p {
+  margin: 0;
+  font-weight: 400;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $yellow-color;
+}
+
+.promo__inner {
+  position: relative;
+}

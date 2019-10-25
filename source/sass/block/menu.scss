@@ -1,1 +1,39 @@
 @import "../global/variables";
+
+.menu__link {
+  font-family: $base-font-family;
+  color: rgba($violet-lite-color, 0.6);
+  font-size: $base-font-size;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    color: $yellow-color;
+  }
+
+  &:focus {
+    color: $white-color;
+  }
+}
+
+.menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu--header {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -3px 0 auto;
+  width: 785px;
+  padding-top: 11px;
+}
+
+.menu--header .menu__item {
+  margin-right: 37px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+

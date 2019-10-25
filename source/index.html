@@ -11,7 +11,7 @@
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="index-page">
 <div style="display: none">
   <include src="build/img/sprite.svg"></include>
 </div>
@@ -25,27 +25,27 @@
           </picture>
         </div>
         <ul class="menu menu--header">
-          <li class="menu__list">
+          <li class="menu__item">
             <a href="#" class="menu__link">
               Преумищества
             </a>
           </li>
-          <li class="menu__list">
+          <li class="menu__item">
             <a href="#" class="menu__link">
               Заработок
             </a>
           </li>
-          <li class="menu__list">
+          <li class="menu__item">
             <a href="#" class="menu__link">
               Лучшие сотрудники
             </a>
           </li>
-          <li class="menu__list">
+          <li class="menu__item">
             <a href="#" class="menu__link">
               Как вывести деньги
             </a>
           </li>
-          <li class="menu__list">
+          <li class="menu__item">
             <a href="#" class="menu__link">
               Отзывы
             </a>
@@ -55,6 +55,87 @@
     </div>
   </div>
 </header>
+<main>
+  <section class="promo" id="promo">
+    <div class="container promo__inner">
+      <h1 class="h1 h1--promo">
+        Онлайн
+        <br>
+        заработок на дому
+      </h1>
+      <p class="promo__text">
+        Работай без вложений и получи первый доход уже через 2 дня.
+      </p>
+      <ul class="promo__benefits">
+        <li>
+          <p>
+            <span class="promo__number">
+              4
+            </span>
+            года на рынку
+          </p>
+        </li>
+        <li>
+          <p>
+            <span class="promo__number">
+              40 000
+            </span>
+            человек работают каждый день
+          </p>
+        </li>
+        <li>
+          <p>
+            <span class="promo__number">
+              350 000₽
+            </span>
+            выплат за последнюю неделю
+          </p>
+        </li>
+      </ul>
+      <div class="send">
+        <p class="send__title">
+          Куда прислать подробную информацию?
+        </p>
+        <form action="send.php" method="post" autocomplete="off">
+          <div class="send__inner">
+            <div class="send__item">
+              <div class="send__item__select">
+                <svg width="30" height="30" id="send_messenger_icon">
+                  <use xlink:href="#icon-viber"></use>
+                </svg>
+                <label for="send_contacts" class="visually-hidden">
+                  Месенджер
+                </label>
+                <select id="send_contacts" class="send__form-control">
+                  <option value="viber">
+                    Viber
+                  </option>
+                  <option value="telegram">
+                    Telegram
+                  </option>
+                  <option value="whatsapp">
+                    WhatsApp
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="send__item">
+              <label for="send_phone" class="visually-hidden">
+                Телефон
+              </label>
+              <input type="tel" class="send__form-control" placeholder="Номер телефона" id="send_phone">
+            </div>
+            <div class="send__item send__item--submit">
+              <button type="submit" class="button button--send">
+                Узнать подробнее
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
 <script src="js/scripts.min.js"></script>
 </body>
 </html>

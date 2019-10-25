@@ -1,0 +1,15 @@
+@import "../global/variables";
+
+.h1 {
+  font-size: $base-font-size * 4 - 6px;
+  line-height: $base-line-height * 3 + 7px;
+  font-weight: 700;
+}
+
+.h1--promo {
+  margin-top: 0;
+  max-width: 620px;
+  width: 100%;
+  letter-spacing: 1.4px;
+  margin-bottom: 30px;
+}
