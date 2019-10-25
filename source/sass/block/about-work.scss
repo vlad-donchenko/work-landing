@@ -1,0 +1,42 @@
+@import "../global/variables";
+
+.about-work__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+  max-width: 1150px;
+  width: 100%;
+}
+
+.about-work__item {
+  max-width: 555px;
+  width: 100%;
+  padding: 30px 20px 41px 20px;
+  margin-right: 40px;
+  margin-top: 28px;
+  box-shadow: 0 0 4px #ced3e9;
+  border-radius: 15px;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    margin-top: 0;
+  }
+}
+
+.about-work__description {
+  padding-left: 9px;
+  margin-top: 27px;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: $black-color;
+}
+
+.about-work {
+  margin-top: 200px;
+}
