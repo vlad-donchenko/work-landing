@@ -1,0 +1,50 @@
+@import "../global/variables";
+
+.money-output {
+  margin-top: 207px;
+}
+
+.money-output__description {
+  margin-top: 21px;
+  font-size: $base-font-size + 1px;
+  line-height: $base-line-height - 1px;
+  color: $black-color;
+}
+
+.money-output__list {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+
+.money-output__list li {
+  position: relative;
+  padding-left: 32px;
+  font-size: $base-font-size;
+  line-height: $base-line-height + 4px;
+  color: $violet-base;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    left: 2px;
+    top: 11px;
+    height: 3px;
+    width: 15px;
+    border-radius: 2px;
+    background-color: $blue-color;
+  }
+}
+
+.money-output__list span {
+  color: $black-color;
+}
+
+.money-output__inner {
+  padding-bottom: 20px;
+  background-image: url(../img/money-output.jpg);
+  background-repeat: no-repeat;
+  background-size: 462px 360px;
+  background-position: 99% -11px;
+}
