@@ -1,0 +1,42 @@
+@import "../global/variables";
+
+.employees {
+  margin-top: 122px;
+  padding-top: 150px;
+  padding-bottom: 176px;
+  background-color: $dark-white;
+}
+
+.employees__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.employees__left {
+  max-width: 970px;
+  width: 100%;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+.employees__right {
+  max-width: 238px;
+  padding-top: 89px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.employees__leaders {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: $base-font-size + 6px;
+  line-height: $base-line-height + 8px;
+}
+
+.employees__details {
+  width: 100%;
+  margin-top: 25px;
+  padding-left: 63px;
+  padding-right: 63px;
+}

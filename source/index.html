@@ -189,33 +189,457 @@
         <p class="your-earnings__description">
           Данные, указанные в калькуляторе, носят информационный (ориентировочный) характер.
         </p>
-        <div class="calculation">
-          <div class="calculation__item">
-            <p class="calculation__text">
-              Сумма которую хотели бы зарабатывать
-            </p>
-            <div class="calculation__number">
-              <label for="calculation__sum" class="visually-hidden">
-                Сумма
-              </label>
-              <input type="number" min="0" value="2500" id="calculation__sum">
+        <div class="calculation calculation--your-earnings">
+          <form action="calculate.php" method="post">
+            <div class="calculation__item">
+              <p class="calculation__text">
+                Сумма которую хотели бы зарабатывать
+              </p>
+              <div class="calculation__input calculation__input--sum">
+                <label for="calculation__sum" class="visually-hidden">
+                  Сумма
+                </label>
+                <input type="number" min="0" value="2500" id="calculation__sum">
+              </div>
+              <div class="calculation__slider"></div>
             </div>
-            <div class="calculation__slider"></div>
-          </div>
-          <div class="calculation__item">
-            <p class="calculation__text">
-              Сколько могу уделять времени работе в день
-            </p>
-            <div class="calculation__number">
-              <label for="calculation__ours" class="visually-hidden">
-                Сумма
-              </label>
-              <input type="number" min="2" value="2" id="calculation__ours">
+            <div class="calculation__item">
+              <p class="calculation__text">
+                Сколько могу уделять времени работе в день
+              </p>
+              <div class="calculation__input calculation__input--ours">
+                <label for="calculation__ours" class="visually-hidden">
+                  Сумма
+                </label>
+                <input type="number" min="2" value="2" id="calculation__ours">
+              </div>
+              <div class="calculation__slider"></div>
             </div>
-            <div class="calculation__slider"></div>
-          </div>
+            <div class="calculation__order">
+              <button type="submit" class="button button--calculation">
+                Хочу попробовать
+              </button>
+              <p class="calculation__sum" id="calculation_sum">
+                6 500₽
+              </p>
+            </div>
+          </form>
         </div>
       </div>
+    </div>
+  </section>
+  <section class="employees">
+    <div class="employees__inner container">
+      <div class="employees__left">
+        <h2 class="h2 h2--employees">
+          Лучшие сотрудники
+        </h2>
+        <div class="best-employees">
+          <div class="best-employees__slider">
+            <div class="best-employees__element">
+              <ul class="best-employees__list">
+                <li class="best-employees__item">
+                  <picture>
+                    <img src="img/best-employees-1.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Райнис Григорий
+                    </p>
+                    <p class="best-employees__location">
+                      Москва
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработал
+                      <span>
+                      3 450 000₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="best-employees__item">
+                  <picture>
+                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Таничев Сергей
+                    </p>
+                    <p class="best-employees__location">
+                      Тюмень
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработал
+                      <span>
+                      3 245 700₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="best-employees__item">
+                  <picture>
+                    <img src="img/best-employees-3.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Максаков Павел
+                    </p>
+                    <p class="best-employees__location">
+                      Чита
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработал
+                      <span>
+                      3125 000₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="best-employees__item">
+                  <picture>
+                    <img src="img/best-employees-4.jpg" width="100" height="100" alt="Русакова Елена" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Русакова Елена
+                    </p>
+                    <p class="best-employees__location">
+                      Казань
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработала
+                      <span>
+                      2 112 200₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="best-employees__element">
+              <ul class="best-employees__list">
+                <li class="best-employees__item">
+                  <picture>
+                    <img src="img/best-employees-1.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Райнис Григорий
+                    </p>
+                    <p class="best-employees__location">
+                      Москва
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработал
+                      <span>
+                      3 450 000₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="best-employees__item">
+                  <picture>
+                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Таничев Сергей
+                    </p>
+                    <p class="best-employees__location">
+                      Тюмень
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработал
+                      <span>
+                      3 245 700₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="best-employees__item">
+                  <picture>
+                    <img src="img/best-employees-3.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Максаков Павел
+                    </p>
+                    <p class="best-employees__location">
+                      Чита
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработал
+                      <span>
+                      3125 000₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="best-employees__item">
+                  <picture>
+                    <img src="img/best-employees-4.jpg" width="100" height="100" alt="Русакова Елена" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Русакова Елена
+                    </p>
+                    <p class="best-employees__location">
+                      Казань
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработала
+                      <span>
+                      2 112 200₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="best-employees__element">
+              <ul class="best-employees__list">
+                <li class="best-employees__item">
+                  <picture>
+                    <img src="img/best-employees-1.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Райнис Григорий
+                    </p>
+                    <p class="best-employees__location">
+                      Москва
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработал
+                      <span>
+                      3 450 000₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="best-employees__item">
+                  <picture>
+                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Таничев Сергей
+                    </p>
+                    <p class="best-employees__location">
+                      Тюмень
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработал
+                      <span>
+                      3 245 700₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="best-employees__item">
+                  <picture>
+                    <img src="img/best-employees-3.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Максаков Павел
+                    </p>
+                    <p class="best-employees__location">
+                      Чита
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработал
+                      <span>
+                      3125 000₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="best-employees__item">
+                  <picture>
+                    <img src="img/best-employees-4.jpg" width="100" height="100" alt="Русакова Елена" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Русакова Елена
+                    </p>
+                    <p class="best-employees__location">
+                      Казань
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработала
+                      <span>
+                      2 112 200₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="best-employees__element">
+              <ul class="best-employees__list">
+                <li class="best-employees__item">
+                  <picture>
+                    <img src="img/best-employees-1.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Райнис Григорий
+                    </p>
+                    <p class="best-employees__location">
+                      Москва
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработал
+                      <span>
+                      3 450 000₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="best-employees__item">
+                  <picture>
+                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Таничев Сергей
+                    </p>
+                    <p class="best-employees__location">
+                      Тюмень
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработал
+                      <span>
+                      3 245 700₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="best-employees__item">
+                  <picture>
+                    <img src="img/best-employees-3.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Максаков Павел
+                    </p>
+                    <p class="best-employees__location">
+                      Чита
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработал
+                      <span>
+                      3125 000₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="best-employees__item">
+                  <picture>
+                    <img src="img/best-employees-4.jpg" width="100" height="100" alt="Русакова Елена" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Русакова Елена
+                    </p>
+                    <p class="best-employees__location">
+                      Казань
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработала
+                      <span>
+                      2 112 200₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button type="button" class="best-employees__arrow  best-employees__arrow--prev" aria-label="Назад">
+            <svg width="20" height="43">
+              <use xlink:href="#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <button type="button" class="best-employees__arrow  best-employees__arrow--next" aria-label="Вперед">
+            <svg width="20" height="42">
+              <use xlink:href="#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="employees__right">
+        <p class="employees__leaders">
+          Лидеры месяца
+        </p>
+        <ul class="leaders">
+          <li class="leaders__item leaders__item--first">
+            <div class="leaders__left">
+              <picture>
+                <img src="img/leaders-1.jpg" width="60" height="61" alt="Беспалов Игорь" class="leaders__avatar">
+              </picture>
+            </div>
+            <div class="leaders__info-block">
+              <p class="leaders__name">
+                Беспалов Игорь
+              </p>
+              <p class="leaders__sum">
+                Заработал
+                <span>
+                  240 000₽
+                </span>
+              </p>
+            </div>
+          </li>
+          <li class="leaders__item leaders__item--second">
+            <div class="leaders__left">
+              <picture>
+                <img src="img/leaders-2.jpg" width="60" height="61" alt="Туров Евгений" class="leaders__avatar">
+              </picture>
+            </div>
+            <div class="leaders__info-block">
+              <p class="leaders__name">
+                Туров Евгений
+              </p>
+              <p class="leaders__sum">
+                Заработал
+                <span>
+                  127 500₽
+                </span>
+              </p>
+            </div>
+          </li>
+          <li class="leaders__item leaders__item--third">
+            <div class="leaders__left">
+              <picture>
+                <img src="img/leaders-3.jpg" width="60" height="61" alt="Туров Евгений" class="leaders__avatar">
+              </picture>
+            </div>
+            <div class="leaders__info-block">
+              <p class="leaders__name">
+                Морозова Анна
+              </p>
+              <p class="leaders__sum">
+                Заработал
+                <span>
+                  120 000₽
+                </span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="employees__details">
+        <a href="#" class="button button--employees">
+          Хочу попробовать
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="container">
+      
     </div>
   </section>
 </main>

@@ -1,0 +1,23 @@
+@import "../global/variables";
+
+.your-earnings {
+  margin-top: 200px;
+}
+
+.your-earnings__wrapper {
+  max-width: 1920px;
+  padding-bottom: 85px;
+  width: 100%;
+  background-image: url("../img/your-earnings-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 1088px 760px;
+  background-position: right bottom;
+}
+
+.your-earnings__description {
+  max-width: 815px;
+  margin: 16px 0;
+  color: $violet-base;
+  font-size: $base-font-size + 1px;
+  line-height: $base-line-height - 1px;
+}

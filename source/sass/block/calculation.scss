@@ -1,0 +1,91 @@
+@import "../global/variables";
+
+.calculation__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.calculation__text {
+  margin: 0;
+  font-size: $base-font-size + 2px;
+  line-height: $base-line-height;
+  font-weight: 400;
+}
+
+.calculation__slider {
+  width: 100%;
+  padding: 30px;
+  margin-top: 11px;
+  border: 2px solid $dark-white;
+  border-radius: 10px;
+}
+
+.calculation--your-earnings {
+  max-width: 810px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.calculation__input {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+  width: 100%;
+  max-width: 200px;
+}
+
+.calculation__input input {
+  font-family: inherit;
+  margin-right: 7px;
+  width: 100px;
+  text-align: right;
+  font-size: $base-font-size + 6px;
+  font-weight: 600;
+  border: none;
+  appearance: none;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}
+
+.calculation__input--ours input {
+  width: 35px;
+}
+
+.calculation__input::after {
+  content: " ";
+  font-size: $base-font-size + 6px;
+  font-weight: 600;
+}
+
+.calculation__input--sum::after {
+  content: "₽";
+}
+
+.calculation__input--ours::after {
+  content: "часов";
+}
+
+.calculation__order {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.calculation__sum {
+  margin: 0;
+  font-weight: 600;
+  font-size: $base-font-size * 2.5;
+  line-height: $base-line-height * 2 + 10px;
+}
