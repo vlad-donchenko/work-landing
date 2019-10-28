@@ -37,3 +37,36 @@
   }
 }
 
+.menu--footer .menu__link {
+  color: rgba($white-color, 0.87);
+
+  &:hover {
+    color: $yellow-color;
+  }
+
+  &:focus {
+    color: $white-color;
+  }
+}
+
+.menu--footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 445px;
+  margin: 0;
+}
+
+.menu--footer .menu__item {
+  width: 175px;
+  margin-top: 15px;
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    margin-top: 0;
+  }
+
+  &:nth-child(2n) {
+    margin-left: auto;
+  }
+}
+
