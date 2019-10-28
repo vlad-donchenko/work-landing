@@ -1,4 +1,5 @@
 @import "../libs/slick/slick";
+@import "block/slick-dots";
 @import "global/normalize.scss";
 @import "global/fonts";
 @import "global/variables";
@@ -24,3 +25,4 @@
 @import "block/work-steps";
 @import "block/get-money";
 @import "block/money-output";
+@import "block/reviews";
