@@ -197,3 +197,56 @@
     margin-right: 0;
   }
 }
+
+.best-employees--vertical {
+  margin: 0;
+}
+
+.best-employees--vertical .best-employees__list {
+  display: block;
+  margin-right: 0;
+}
+
+.best-employees--vertical .best-employees__item {
+  margin-right: 0;
+
+  &:nth-child(2) {
+    margin-top: 30px;
+  }
+}
+
+.best-employees--small .best-employees__item {
+  padding: 27px 35px;
+  max-width: 314px;
+}
+
+.best-employees--small .best-employees__avatar {
+  width: 75px;
+  height: 75px;
+}
+
+.best-employees--small .best-employees__name {
+  font-size: $base-font-size - 3px;
+  line-height: normal;
+  font-weight: 700;
+}
+
+.best-employees--small .best-employees__sum {
+  margin-top: 7px;
+  font-size: $base-font-size - 4px;
+  line-height: normal;
+}
+
+.best-employees--small .best-employees__sum span {
+  margin-left: 1px;
+  font-size: $base-font-size - 3px;
+}
+
+.best-employees--small .best-employees__info-block {
+  max-width: 151px;
+}
+
+.best-employees--small .best-employees__location {
+  line-height: normal;
+  font-size: $base-font-size - 4px;
+}

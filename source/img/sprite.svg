@@ -91,6 +91,8 @@
   <path d="M22.6689 45.9185L2.66894 24.6403L22.6689 2.30981" fill="none" stroke="#FECE26" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol id="icon-arrow-right" viewBox="0 0 24 48">
 <path d="M2 45.9185L22 24.6403L2 2.30981" fill="none" stroke="#FECE26" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol id="icon-checked-green" viewBox="0 0 29 25">
+<path d="M2.83325 13.7987L10.1666 22.4653L26.1666 2.46533" stroke="#00B612" stroke-width="4" fill="#f5f6fa" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol id="icon-google-plus" viewBox="0 0 31 31">
 <g>
 <path d="M15.6133 30.6194C23.8976 30.6194 30.6133 23.9037 30.6133 15.6194C30.6133 7.33511 23.8976 0.619385 15.6133 0.619385C7.32901 0.619385 0.613281 7.33511 0.613281 15.6194C0.613281 23.9037 7.32901 30.6194 15.6133 30.6194Z" fill="#CF4C3C"/>

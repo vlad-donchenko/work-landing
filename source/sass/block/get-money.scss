@@ -1,0 +1,64 @@
+@import "../global/variables";
+
+.get-money {
+  margin-top: 43px;
+  padding-top: 140px;
+  padding-bottom: 136px;
+  background-color: $dark-white;
+}
+
+.get-money__title {
+  margin-top: 0;
+  margin-bottom: 71px;
+  font-weight: 600;
+  font-size: $base-font-size + 6px;
+  line-height: $base-line-height + 6px;
+  letter-spacing: 0.01em;
+  color: $black-color;
+}
+
+.get-money__info-block {
+  max-width: 490px;
+  margin-left: 65px;
+}
+
+.get-money__hint {
+  position: absolute;
+  right: 236px;
+  top: 147px;
+  width: 277px;
+  padding: 29px 24px;
+  background-color: $white-color;
+  box-shadow: 0 4px 20px rgba($black-color, 0.25);
+  border-radius: 10px;
+}
+
+.get-money__text {
+  margin: 10px 0 0 0;
+  text-align: center;
+  font-weight: 500;
+  color: $black-color;
+  font-size: $base-font-size - 2px;
+  line-height: $base-line-height - 4px;
+}
+
+.get-money__text span {
+  font-weight: 600;
+  color: $blue-color;
+}
+
+.get-money__hint svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.get-money__inner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  background-image: url("../img/get-money-background.png");
+  background-size: 737px 420px;
+  background-repeat: no-repeat;
+  background-position: 97% 15px;
+}
