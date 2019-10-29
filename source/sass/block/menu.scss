@@ -95,3 +95,47 @@
   }
 }
 
+@media (max-width: $tablet) {
+  .menu--footer {
+    display: block;
+    max-width: 195px;
+  }
+
+  .menu--footer .menu__item {
+    max-width: 100%;
+
+    &:nth-child(2) {
+      margin-top: 15px;
+    }
+
+    &:nth-child(2n) {
+      margin-left: 0;
+    }
+  }
+
+  .menu--header {
+    display: none;
+    padding-top: 0;
+    max-width: 100%;
+    margin: 70px 0 0 0;
+  }
+
+  .menu--header .menu__item {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .menu--header .menu__link {
+    font-size: 20px;
+  }
+
+  .menu--open {
+    display: block;
+  }
+}
+

@@ -4,6 +4,19 @@
   var VIDEO_IMAGE = 'img/video/background-video.jpg';
   var employeesSlider = $('.best-employees__slider');
   var reviewsSliders = $('.reviews__sliders');
+  var menuButton = $('.nav__toggle');
+  var siteHeader = $('.site-header');
+  var mainMenu = $('.menu--header');
+  var body = $('body');
+
+  var onMenuOpenClick = function () {
+    $(this).toggleClass('nav__toggle--open');
+    siteHeader.toggleClass('site-header--open');
+    mainMenu.toggleClass('menu--open');
+    body.toggleClass('overflow-hidden');
+  };
+
+  menuButton.on('click', onMenuOpenClick);
 
   videoBackgroundElement.vide({
       mp4: VIDEO_PATH,
@@ -54,10 +67,10 @@
     nextArrow: $('.reviews__arrow--next'),
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 991,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       },
       {

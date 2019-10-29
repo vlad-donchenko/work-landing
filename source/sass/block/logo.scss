@@ -14,3 +14,9 @@
     margin-right: 120px;
   }
 }
+
+@media (max-width: $tablet) {
+  .logo--footer {
+    margin-right: 100px;
+  }
+}

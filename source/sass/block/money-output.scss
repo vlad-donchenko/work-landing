@@ -64,3 +64,18 @@
     max-width: 483px;
   }
 }
+
+@media (max-width: $tablet) {
+  .money-output {
+    margin-top: 80px;
+  }
+
+  .money-output__info-block {
+    max-width: 100%;
+  }
+
+  .money-output__inner {
+    background: transparent;
+    padding-bottom: 0;
+  }
+}

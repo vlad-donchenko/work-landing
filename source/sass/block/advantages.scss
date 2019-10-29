@@ -60,3 +60,15 @@
     max-width: 455px;
   }
 }
+
+@media (max-width: $tablet) {
+  .advantages {
+    margin-top: 80px;
+  }
+
+  .advantages__item {
+    padding: 35px;
+    margin-right: 30px;
+    max-width: 349px;
+  }
+}

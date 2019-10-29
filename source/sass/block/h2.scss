@@ -40,9 +40,21 @@
 @media (max-width: $desktop-large) {
   .h2 {
     font-size: 36px;
+    line-height: normal;
   }
 
   .h2--work-steps {
     margin-top: 0;
+  }
+}
+
+@media (max-width: $tablet) {
+  .h2 {
+    font-size: 28px;
+    margin-bottom: 35px;
+  }
+
+  .h2--your-earnings {
+    max-width: 100%;
   }
 }

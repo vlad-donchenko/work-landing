@@ -34,3 +34,10 @@
     padding-bottom: 0;
   }
 }
+
+@media (max-width: $tablet) {
+  .your-earnings {
+    margin-top: 80px;
+    overflow: hidden;
+  }
+}

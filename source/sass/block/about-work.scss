@@ -52,3 +52,14 @@
     max-width: 455px;
   }
 }
+
+@media (max-width: $tablet) {
+  .about-work__item {
+    max-width: 350px;
+    margin-right: 28px;
+  }
+
+  .about-work {
+    margin-top: 80px;
+  }
+}

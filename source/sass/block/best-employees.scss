@@ -179,3 +179,41 @@
     max-width: 405px;
   }
 }
+
+@media (max-width: $tablet) {
+  .best-employees__item {
+    max-width: 294px;
+    padding: 20px;
+  }
+
+  .best-employees__name {
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  .best-employees__location {
+    font-size: 13px;
+    line-height: normal;
+  }
+
+  .best-employees__sum {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .best-employees__sum span {
+    font-size: 15px;
+  }
+
+  .best-employees__info-block {
+    max-width: 175px;
+  }
+
+  .best-employees__avatar {
+    max-width: 70px;
+  }
+
+  .best-employees--get-money {
+    display: none;
+  }
+}

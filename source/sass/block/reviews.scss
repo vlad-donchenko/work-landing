@@ -113,3 +113,22 @@
     padding: 25px 40px;
   }
 }
+
+@media (max-width: $tablet) {
+  .reviews__rating {
+    margin-bottom: 20px;
+  }
+
+  .reviews__item {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .reviews__wrapper {
+    margin-top: 40px;
+  }
+
+  .reviews__sliders .slick-current .reviews__item {
+    margin: 0;
+  }
+}

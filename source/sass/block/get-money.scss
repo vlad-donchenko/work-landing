@@ -84,3 +84,31 @@
     margin-left: 0;
   }
 }
+
+@media (max-width: $tablet) {
+  .get-money {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .get-money__inner {
+    padding-top: 70px;
+    padding-bottom: 115px;
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .get-money__info-block {
+    max-width: 100%;
+  }
+
+  .get-money__title {
+    text-align: center;
+    margin-bottom: 115px;
+  }
+
+  .get-money__hint {
+    position: static;
+    margin: 0 auto;
+  }
+}

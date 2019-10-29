@@ -3,3 +3,59 @@
 .nav {
   display: flex;
 }
+
+.nav__toggle {
+  display: none;
+}
+
+@media (max-width: $tablet) {
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .nav__toggle {
+    display: inline-block;
+    padding: 0;
+    margin-left: auto;
+    margin-top: 5px;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .nav__toggle span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 7px;
+    background-color: $white-color;
+    border-radius: 2px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .nav__toggle--open span {
+    position: relative;
+
+    &:nth-child(1) {
+      top: 8px;
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(3) {
+      top: -10px;
+      transform: rotate(-45deg);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+  }
+}

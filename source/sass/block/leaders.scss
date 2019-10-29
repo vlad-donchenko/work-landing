@@ -93,7 +93,7 @@
   background-image: url("../img/medal-3.svg");
 }
 
-@media (min-width: 991px) and (max-width: 1339px) {
+@media (min-width: 768px) and (max-width: 1339px) {
   .leaders {
     display: flex;
     flex-wrap: wrap;
@@ -115,5 +115,28 @@
 
   .leaders__info-block {
     margin-left: 30px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .leaders__item {
+    padding-right: 15px;
+  }
+
+  .leaders__sum {
+    font-size: 13px;
+  }
+
+  .leaders__sum span {
+    font-size: 15px;
+  }
+
+  .leaders__info-block {
+    margin-left: 15px;
+    max-width: 155px;
+  }
+
+  .leaders__left {
+    width: 50px;
   }
 }

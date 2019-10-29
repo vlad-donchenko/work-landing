@@ -44,3 +44,11 @@ img {
 .index-page .site-header__wrapper {
   background-color: transparent;
 }
+
+.index-page .site-header--open {
+  position: fixed;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
