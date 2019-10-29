@@ -134,3 +134,22 @@
     text-align: center;
   }
 }
+
+@media (max-width: $mobile-large) {
+  .promo__benefits li {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .promo__text {
+    font-size: 16px;
+    line-height: normal;
+  }
+}

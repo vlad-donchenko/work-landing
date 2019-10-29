@@ -41,3 +41,9 @@
     overflow: hidden;
   }
 }
+
+@media (max-width: $mobile-vertical) {
+  .your-earnings__description {
+    font-size: 15px;
+  }
+}

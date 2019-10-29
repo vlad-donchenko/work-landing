@@ -98,3 +98,14 @@
     margin-right: auto;
   }
 }
+
+@media (max-width: $mobile-large) {
+  .advantages__item {
+    max-width: 100%;
+    margin-right: 0;
+
+    &:nth-child(2) {
+      margin-top: 30px;
+    }
+  }
+}

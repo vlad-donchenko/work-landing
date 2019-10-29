@@ -135,3 +135,18 @@
     margin-bottom: 100px;
   }
 }
+
+@media (max-width: $mobile-large) {
+  .get-money__inner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &::before {
+      bottom: 0;
+    }
+  }
+
+  .get-money__title {
+    margin-bottom: 150px;
+  }
+}

@@ -26,3 +26,9 @@
     max-width: 570px;
   }
 }
+
+@media (max-width: $mobile-large) {
+  .container {
+    width: 100%;
+  }
+}

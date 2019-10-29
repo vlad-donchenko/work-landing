@@ -37,3 +37,13 @@
     text-align: center;
   }
 }
+
+@media (max-width: $mobile-large) {
+  .h1 {
+    font-size: 32px;
+  }
+
+  .h1--promo {
+    margin-bottom: 20px;
+  }
+}

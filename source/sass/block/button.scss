@@ -68,3 +68,9 @@
     margin-top: 40px;
   }
 }
+
+@media (max-width: $mobile-large) {
+  .button--calculation {
+    width: 100%;
+  }
+}

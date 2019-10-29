@@ -132,3 +132,18 @@
     margin: 0;
   }
 }
+
+@media (max-width: $mobile-large) {
+  .reviews__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .reviews__arrow {
+    display: none;
+  }
+
+  .reviews {
+    margin-top: 60px;
+  }
+}

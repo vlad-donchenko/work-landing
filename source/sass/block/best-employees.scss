@@ -240,3 +240,22 @@
     margin-top: 7px;
   }
 }
+
+@media (max-width: $mobile-large) {
+  .best-employees__item {
+    max-width: 100%;
+    margin-right: 0;
+
+    &:nth-child(2) {
+      margin-top: 30px;
+    }
+  }
+
+  .best-employees__arrow--next {
+    right: -35px;
+  }
+
+  .best-employees__arrow--prev {
+    left: -15px;
+  }
+}

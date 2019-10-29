@@ -114,7 +114,7 @@
   }
 }
 
-@media (max-width: $tablet) {
+@media (max-width: $mobile-vertical) {
   .work-steps__item {
     max-width: 250px;
   }
@@ -123,5 +123,16 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (max-width: $mobile-large) {
+  .work-steps__item {
+    max-width: 100%;
+    margin-right: 0;
+
+    &:nth-child(2) {
+      margin-top: 30px;
+    }
   }
 }

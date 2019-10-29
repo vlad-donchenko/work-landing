@@ -66,8 +66,20 @@
     text-align: center;
   }
 }
+
 @media (max-width: $tablet) {
   .employees__leaders {
     text-align: center;
+  }
+}
+
+@media (max-width: $mobile-large) {
+  .employees__left {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .employees {
+    margin-top: 60px;
   }
 }

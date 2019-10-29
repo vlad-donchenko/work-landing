@@ -76,3 +76,18 @@
     padding-left: 0;
   }
 }
+
+@media (max-width: $mobile-large) {
+  .about-work__item {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .about-work__list {
+    margin-top: 0;
+  }
+
+  .about-work__item:nth-child(2) {
+    margin-top: 28px;
+  }
+}

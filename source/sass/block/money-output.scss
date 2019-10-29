@@ -79,3 +79,9 @@
     padding-bottom: 0;
   }
 }
+
+@media (max-width: $mobile-large) {
+  .money-output {
+    margin-top: 60px;
+  }
+}

@@ -100,3 +100,24 @@
     font-size: 16px;
   }
 }
+
+@media (max-width: $mobile-large) {
+  .calculation__text {
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: right;
+  }
+
+  .calculation__order {
+    flex-direction: column;
+  }
+
+  .calculation__sum {
+    order: -1;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-align: center;
+    line-height: normal;
+  }
+}

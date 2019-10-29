@@ -33,18 +33,17 @@
 
   employeesSlider.slick({
     dots: true,
-    infinite: true,
-    speed: 400,
+    infinite: false,
+    speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: $('.best-employees__arrow--prev'),
     nextArrow: $('.best-employees__arrow--next'),
     responsive: [
       {
-        breakpoint: 480,
+        breakpoint: 991,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          infinite: true
         }
       }
     ]
@@ -52,8 +51,8 @@
 
   reviewsSliders.slick({
     dots: true,
-    infinite: true,
-    speed: 400,
+    infinite: false,
+    speed: 600,
     slidesToShow: 2,
     slidesToScroll: 2,
     prevArrow: $('.reviews__arrow--prev'),
@@ -62,15 +61,23 @@
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          infinite: true
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 768,
+        settings: {
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 571,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows: false
         }
       }
     ]

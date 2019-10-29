@@ -79,3 +79,7 @@
     margin-right: 0;
   }
 }
+
+.slick-arrow[aria-disabled="true"] {
+  visibility: hidden;
+}
