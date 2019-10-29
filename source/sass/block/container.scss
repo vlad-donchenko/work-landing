@@ -20,3 +20,9 @@
     max-width: 768px;
   }
 }
+
+@media (max-width: $mobile-vertical) {
+  .container {
+    max-width: 570px;
+  }
+}

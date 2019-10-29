@@ -63,3 +63,16 @@
     margin-top: 80px;
   }
 }
+
+@media (max-width: $mobile-vertical) {
+  .about-work__item {
+    padding: 25px 15px;
+    max-width: 251px;
+  }
+
+  .about-work__description {
+    margin-top: 15px;
+    font-size: 14px;
+    padding-left: 0;
+  }
+}

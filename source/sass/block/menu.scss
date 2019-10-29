@@ -139,3 +139,27 @@
   }
 }
 
+@media (max-width: $mobile-vertical) {
+  .menu--footer {
+    display: flex;
+    max-width: 313px;
+    margin-left: auto;
+  }
+
+  .menu--footer .menu__item {
+    max-width: 142px;
+
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+
+    &:nth-child(2n) {
+      margin-left: auto;
+    }
+  }
+
+  .menu--footer .menu__link {
+    font-size: 13px;
+  }
+}
+

@@ -58,3 +58,9 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: $mobile-vertical) {
+  .h2--employees {
+    text-align: center;
+  }
+}

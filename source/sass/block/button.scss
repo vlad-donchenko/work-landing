@@ -57,8 +57,14 @@
 @media (max-width: $tablet) {
   .button--get-money {
     display: block;
-    max-width: 267px;
+    max-width: 277px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (max-width: $mobile-vertical) {
+  .button--get-money {
+    margin-top: 40px;
   }
 }

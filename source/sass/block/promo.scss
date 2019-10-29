@@ -116,3 +116,21 @@
     text-align: center;
   }
 }
+
+@media (max-width: $mobile-vertical) {
+  .promo__benefits {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .promo__benefits li {
+    width: 33.33%;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .promo__benefits p {
+    text-align: center;
+  }
+}

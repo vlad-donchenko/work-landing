@@ -72,3 +72,29 @@
     max-width: 349px;
   }
 }
+
+@media (max-width: $mobile-vertical) {
+  .advantages__item {
+    padding: 35px 15px;
+    max-width: 250px;
+  }
+
+  .advantages__name br {
+    display: none;
+  }
+
+  .advantages__name {
+    font-size: 15px;
+    line-height: normal;
+  }
+
+  .advantages__text {
+    font-size: 14px;
+  }
+
+  .advantages__item svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

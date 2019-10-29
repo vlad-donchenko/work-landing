@@ -84,3 +84,22 @@
     margin-top: 100px;
   }
 }
+
+@media (max-width: $mobile-vertical) {
+  .site-footer__social {
+    max-width: 100%;
+    margin-top: 50px;
+  }
+
+  .site-footer__title {
+    text-align: center;
+  }
+
+  .site-footer__wrapper {
+    text-align: center;
+  }
+
+  .site-footer__inner--top {
+    padding-bottom: 30px;
+  }
+}
