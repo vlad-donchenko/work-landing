@@ -3,7 +3,7 @@
 .promo {
   position: relative;
   padding-top: 343px;
-  height: 100vh;
+  padding-bottom: 240px;
   min-height: 980px;
   color: $white-color;
   z-index: 1;
@@ -62,4 +62,35 @@
 
 .promo__inner {
   position: relative;
+}
+
+@media (max-width: $desktop-large) {
+  .promo {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    min-height: 660px;
+  }
+}
+
+@media (max-width: $tablet-large) {
+  .promo__text {
+    max-width: 600px;
+  }
+
+  .promo__benefits {
+    max-width: 645px;
+    margin-top: 40px;
+  }
+
+  .promo__benefits p {
+    font-size: 14px;
+  }
+
+  .promo__number {
+    font-size: 24px;
+  }
+
+  .promo__benefits li {
+    margin-right: 43px;
+  }
 }

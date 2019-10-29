@@ -92,3 +92,28 @@
   display: block;
   background-image: url("../img/medal-3.svg");
 }
+
+@media (min-width: 991px) and (max-width: 1339px) {
+  .leaders {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .leaders__item {
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding-right: 30px;
+    width: 100%;
+    max-width: 33.33%;
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+  }
+
+  .leaders__info-block {
+    margin-left: 30px;
+  }
+}

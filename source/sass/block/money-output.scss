@@ -48,3 +48,19 @@
   background-size: 462px 360px;
   background-position: 99% -11px;
 }
+
+@media (max-width: $desktop-large) {
+  .money-output {
+    margin-top: 160px;
+  }
+}
+
+@media (max-width: $tablet-large) {
+  .money-output {
+    margin-top: 130px;
+  }
+
+  .money-output__info-block {
+    max-width: 483px;
+  }
+}

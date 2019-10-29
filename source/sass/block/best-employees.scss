@@ -173,3 +173,9 @@
   line-height: normal;
   font-size: $base-font-size - 4px;
 }
+
+@media (max-width: $tablet-large) {
+  .best-employees__item {
+    max-width: 405px;
+  }
+}

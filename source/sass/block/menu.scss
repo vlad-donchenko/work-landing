@@ -70,3 +70,28 @@
   }
 }
 
+@media (max-width: $tablet-large) {
+  .menu__link {
+    font-size: 14px;
+  }
+
+  .menu--header .menu__item {
+    margin-right: 20px;
+  }
+
+  .menu--header {
+    max-width: 640px;
+    width: 100%;
+  }
+
+  .menu--footer .menu__item {
+    max-width: 155px;
+    width: 100%;
+  }
+
+  .menu--footer {
+    max-width: 355px;
+    width: 100%;
+  }
+}
+

@@ -97,3 +97,19 @@
 .reviews__arrow--next {
   right: 0;
 }
+
+@media (max-width: $desktop-large) {
+  .reviews {
+    margin-top: 160px;
+  }
+}
+
+@media (max-width: $tablet-large) {
+  .reviews {
+    margin-top: 100px;
+  }
+
+  .reviews__item {
+    padding: 25px 40px;
+  }
+}

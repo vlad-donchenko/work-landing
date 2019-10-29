@@ -7,3 +7,10 @@
 .logo--footer {
   margin-right: 148px;
 }
+
+
+@media (max-width: $tablet-large) {
+  .logo--footer {
+    margin-right: 120px;
+  }
+}

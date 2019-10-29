@@ -46,3 +46,30 @@
   padding-bottom: 54px;
   border: 1px solid #353535;
 }
+
+@media (max-width: $desktop-large) {
+  .site-footer {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: $tablet-large) {
+  .site-footer__social {
+    margin-right: 0;
+    width: 100%;
+    max-width: 175px;
+  }
+
+  .site-footer__inner--top {
+    padding-bottom: 70px;
+  }
+
+  .site-footer__wrapper {
+    padding-bottom: 20px;
+  }
+
+  .site-footer__political {
+    font-size: 14px;
+    line-height: normal;
+  }
+}

@@ -13,3 +13,16 @@
   letter-spacing: 1.4px;
   margin-bottom: 30px;
 }
+
+@media (max-width: $desktop-large) {
+  .h1--promo {
+    font-size: 48px;
+    line-height: normal;
+  }
+}
+
+@media (max-width: $tablet-large) {
+  .h1--promo {
+    max-width: 600px;
+  }
+}

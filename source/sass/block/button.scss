@@ -47,3 +47,9 @@
   padding-right: 50px;
   border-radius: 10px;
 }
+
+@media (max-width: $tablet-large) {
+  .button--send {
+    padding: 16px 25px;
+  }
+}

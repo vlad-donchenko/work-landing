@@ -40,3 +40,15 @@
 .about-work {
   margin-top: 200px;
 }
+
+@media (max-width: $desktop-large) {
+  .about-work {
+    margin-top: 140px;
+  }
+}
+
+@media (max-width: $tablet-large) {
+  .about-work__item {
+    max-width: 455px;
+  }
+}

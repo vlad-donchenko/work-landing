@@ -36,3 +36,13 @@
   margin-top: 0;
   margin-bottom: 10px;
 }
+
+@media (max-width: $desktop-large) {
+  .h2 {
+    font-size: 36px;
+  }
+
+  .h2--work-steps {
+    margin-top: 0;
+  }
+}

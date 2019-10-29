@@ -47,3 +47,16 @@
   font-size: $base-font-size;
   line-height: $base-line-height;
 }
+
+@media (max-width: $desktop-large) {
+  .advantages {
+    margin-top: 140px;
+  }
+}
+
+@media (max-width: $tablet-large) {
+  .advantages__item {
+    padding: 50px;
+    max-width: 455px;
+  }
+}
