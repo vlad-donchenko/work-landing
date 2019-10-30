@@ -1,0 +1,37 @@
+@import "../global/variables";
+
+.noUi-horizontal .noUi-handle {
+  top: -9px;
+  width: 22px;
+  height: 22px;
+  border-color: transparent;
+  background-color: $white-color;
+  border-radius: 50%;
+  box-shadow: 0 2px 7px #ced3e9;
+  transition: transform 0.3s ease;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.3);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.noUi-horizontal {
+  height: 5px;
+  background-color: #f5f6fa;
+  border: none;
+  border-radius: 2px;
+}
+
+.noUi-connect {
+  background-color: $yellow-color;
+}

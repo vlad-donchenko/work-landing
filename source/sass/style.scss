@@ -1,4 +1,5 @@
 @import "../libs/slick/slick";
+@import "../libs/nouslider/nouislider";
 @import "block/slick";
 @import "global/normalize.scss";
 @import "global/fonts";
@@ -28,3 +29,5 @@
 @import "block/reviews";
 @import "block/site-footer";
 @import "block/we-in-social";
+@import "block/modal";
+@import "block/noUi";

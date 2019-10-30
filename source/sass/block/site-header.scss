@@ -10,6 +10,15 @@
   background-color: $black-color;
 }
 
+.site-header--fixed .site-header__wrapper {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.site-header--fixed .logo--header {
+  max-width: 150px;
+}
+
 @media (max-width: $tablet) {
   .site-header__wrapper {
     padding-top: 20px;

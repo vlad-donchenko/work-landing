@@ -48,6 +48,28 @@
   border-radius: 10px;
 }
 
+.button--update {
+  display: block;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+
+  &:hover {
+    svg {
+      opacity: 0.6;
+    }
+  }
+
+  &:focus {
+    svg {
+      opacity: 0.3;
+    }
+  }
+}
+
 @media (max-width: $tablet-large) {
   .button--send {
     padding: 16px 25px;

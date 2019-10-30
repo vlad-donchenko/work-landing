@@ -54,7 +54,7 @@ gulp.task("refresh", function () {
 });
 
 gulp.task("images", function () {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
@@ -102,6 +102,9 @@ gulp.task("js-min", function () {
     "source/libs/jquery/jquery-3.3.1.min.js",
     "source/libs/backgroundVideo/jquery.vide.min.js",
     "source/libs/slick/slick.min.js",
+    "source/libs/nouslider/nouislider.js",
+    "source/libs/picturefill/picture-fill.min.js",
+    "source/js/slider.js",
     "source/js/common.js"
   ])
     .pipe(concat("scripts.min.js"))
@@ -119,6 +122,7 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "js-min",
+  "images",
   "sprite",
   "html"
 ));

@@ -61,7 +61,7 @@
   margin-top: 32px;
 }
 
-.send__item__select {
+.send__item--select {
   position: relative;
 
   &::after {
@@ -84,14 +84,54 @@
   }
 }
 
-.send__item__select .send__form-control {
+.send__item--select .send__form-control {
   padding-left: 49px;
 }
 
-.send__item__select svg {
+.send__item--select svg {
   position: absolute;
   top: 8px;
   left: 11px;
+}
+
+.send--modal {
+  position: static;
+  padding: 0;
+  max-width: 100%;
+  width: 100%;
+  box-shadow: none;
+}
+
+.send__inner--modal {
+  max-width: 268px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.send--modal .send__title {
+  font-size: 40px;
+  line-height: 54px;
+  margin-bottom: 50px;
+}
+
+.send__text {
+  font-size: $base-font-size - 1px;
+  line-height: $base-line-height - 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 16px;
+}
+
+.send__hint {
+  display: none;
+}
+
+.send__hint--open {
+  display: block;
+}
+
+.send__form-control--select::-ms-expand {
+  display: none;
 }
 
 @media (max-width: $desktop-large) {
@@ -103,12 +143,26 @@
   .send__title {
     font-size: 18px;
   }
+
+  .send--modal {
+    padding: 0;
+  }
 }
 
 @media (max-width: $tablet-large) {
   .send {
     width: 260px;
     padding: 35px 20px;
+  }
+
+  .send--modal {
+    width: 100%;
+    padding: 0;
+  }
+
+  .send--modal .send__title {
+    font-size: 36px;
+    line-height: normal;
   }
 
   .send__title {
@@ -122,5 +176,16 @@
     position: static;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .send--modal .send__title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: $mobile-large) {
+  .send--modal .send__title {
+    font-size: 18px;
+    margin-bottom: 20px;
   }
 }

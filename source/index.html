@@ -21,6 +21,7 @@
       <nav class="nav">
         <div class="logo logo--header">
           <picture>
+            <source type="image/webp" srcset="img/logo.webp 1x">
             <img src="img/logo.png" width="177" height="42" alt="Логотип сайта">
           </picture>
         </div>
@@ -31,27 +32,27 @@
         </button>
         <ul class="menu menu--header">
           <li class="menu__item">
-            <a href="#" class="menu__link">
+            <a href="#advantages" class="menu__link">
               Преумищества
             </a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">
+            <a href="#your-earnings" class="menu__link">
               Заработок
             </a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">
+            <a href="#employees" class="menu__link">
               Лучшие сотрудники
             </a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">
+            <a href="#money-output" class="menu__link">
               Как вывести деньги
             </a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">
+            <a href="#reviews" class="menu__link">
               Отзывы
             </a>
           </li>
@@ -71,21 +72,21 @@
       <p class="promo__text">
         Работай без вложений и получи первый доход уже через 2 дня.
       </p>
-      <div class="send">
+      <div class="send send--visible">
         <p class="send__title">
           Куда прислать подробную информацию?
         </p>
         <form action="send.php" method="post" autocomplete="off">
           <div class="send__inner">
             <div class="send__item">
-              <div class="send__item__select">
-                <svg width="30" height="30" id="send_messenger_icon">
+              <div class="send__item--select">
+                <svg width="30" height="30" class="send__messenger-icon">
                   <use xlink:href="#icon-viber"></use>
                 </svg>
                 <label for="send_contacts" class="visually-hidden">
                   Месенджер
                 </label>
-                <select id="send_contacts" class="send__form-control">
+                <select id="send_contacts" name="send-contacts" class="send__form-control send__form-control--select">
                   <option value="viber">
                     Viber
                   </option>
@@ -102,7 +103,7 @@
               <label for="send_phone" class="visually-hidden">
                 Телефон
               </label>
-              <input type="tel" class="send__form-control" placeholder="Номер телефона" id="send_phone">
+              <input type="tel" name="send-phone" class="send__form-control" placeholder="Номер телефона" id="send_phone">
             </div>
             <div class="send__item send__item--submit">
               <button type="submit" class="button button--send">
@@ -111,6 +112,16 @@
             </div>
           </div>
         </form>
+        <div class="send__hint">
+          <p class="send__text">
+            Подробная информация отправлена на выбранный Вами месседжер
+          </p>
+          <button type="button" class="button button--update" aria-label="Закрыть подсказку">
+            <svg width="25" height="25">
+              <use xlink:href="#icon-update-arrows"></use>
+            </svg>
+          </button>
+        </div>
       </div>
       <ul class="promo__benefits">
         <li>
@@ -148,8 +159,8 @@
       <ul class="about-work__list">
         <li class="about-work__item">
           <picture>
-            <img src="img/about-work-1.jpg" width="516" height="341" class="about-work__picture"
-                 alt="Постоянно испытываете нехватку средств и не можете вовремя оплатить по счетам">
+            <source type="image/webp" srcset="img/about-work-1.webp 1x">
+            <img src="img/about-work-1.jpg" width="516" height="341" class="about-work__picture" alt="Постоянно испытываете нехватку средств и не можете вовремя оплатить по счетам">
           </picture>
           <p class="about-work__description">
             Постоянно испытываете нехватку средств и не можете вовремя оплатить по счетам
@@ -157,8 +168,8 @@
         </li>
         <li class="about-work__item">
           <picture>
-            <img src="img/about-work-2.jpg" width="516" height="341" class="about-work__picture"
-                 alt="Хотите достичь материальных целей, приобрести автомобиль или квартиру">
+            <source type="image/webp" srcset="img/about-work-2.webp 1x">
+            <img src="img/about-work-2.jpg" width="516" height="341" class="about-work__picture" alt="Хотите достичь материальных целей, приобрести автомобиль или квартиру">
           </picture>
           <p class="about-work__description">
             Хотите достичь материальных целей, приобрести автомобиль или квартиру
@@ -166,8 +177,8 @@
         </li>
         <li class="about-work__item">
           <picture>
-            <img src="img/about-work-3.jpg" width="516" height="341" class="about-work__picture"
-                 alt="Мечтаете избавиться от стрессов и обрести финансовую уверенность в будущем">
+            <source type="image/webp" srcset="img/about-work-3.webp 1x">
+            <img src="img/about-work-3.jpg" width="516" height="341" class="about-work__picture" alt="Мечтаете избавиться от стрессов и обрести финансовую уверенность в будущем">
           </picture>
           <p class="about-work__description">
             Мечтаете избавиться от стрессов и обрести финансовую уверенность в будущем
@@ -175,8 +186,8 @@
         </li>
         <li class="about-work__item">
           <picture>
-            <img src="img/about-work-4.jpg" width="516" height="341" class="about-work__picture"
-                 alt="Тревожитесь за будущее детей, не знаете где взять деньги на их образование">
+            <source type="image/webp" srcset="img/about-work-4.webp 1x">
+            <img src="img/about-work-4.jpg" width="516" height="341" class="about-work__picture" alt="Тревожитесь за будущее детей, не знаете где взять деньги на их образование">
           </picture>
           <p class="about-work__description">
             Тревожитесь за будущее детей, не знаете где взять деньги на их образование
@@ -185,7 +196,7 @@
       </ul>
     </div>
   </section>
-  <section class="your-earnings">
+  <section class="your-earnings" id="your-earnings">
     <div class="your-earnings__wrapper">
       <div class="container your-earnings__inner">
         <h2 class="h2 h2--your-earnings">
@@ -204,9 +215,11 @@
                 <label for="calculation__sum" class="visually-hidden">
                   Сумма
                 </label>
-                <input type="number" min="0" value="2500" id="calculation__sum">
+                <input type="number" name="calculation__sum" min="2500" max="300000" value="2500" id="calculation__sum">
               </div>
-              <div class="calculation__slider"></div>
+              <div class="calculation__slider">
+                <div class="range" id="range_sum"></div>
+              </div>
             </div>
             <div class="calculation__item">
               <p class="calculation__text">
@@ -216,17 +229,67 @@
                 <label for="calculation__ours" class="visually-hidden">
                   Сумма
                 </label>
-                <input type="number" min="2" value="2" id="calculation__ours">
+                <input type="number" name="calculation__ours" min="1" max="16" value="1" id="calculation__ours">
               </div>
-              <div class="calculation__slider"></div>
+              <div class="calculation__slider">
+                <div class="range" id="range_our"></div>
+              </div>
             </div>
             <div class="calculation__order">
-              <button type="submit" class="button button--calculation">
+              <a href="#modal_calculation" class="button button--modal button--calculation">
                 Хочу попробовать
-              </button>
+              </a>
               <p class="calculation__sum" id="calculation_sum">
                 6 500₽
               </p>
+              <label for="calculation_total" class="visually-hidden">
+                Итог
+              </label>
+              <input type="hidden" name="calculation_total" value="6500" id="calculation_total">
+            </div>
+            <div class="modal" id="modal_calculation">
+              <div class="modal__content">
+                <button type="button" aria-label="Закрыть модальное окно" class="modal__close"></button>
+                <div class="send send--modal">
+                  <p class="send__title">
+                    Куда прислать подробную информацию?
+                  </p>
+                  <div class="send__inner send__inner--modal">
+                    <div class="send__item">
+                      <div class="send__item--select">
+                        <svg width="30" height="30" class="send__messenger-icon">
+                          <use xlink:href="#icon-viber"></use>
+                        </svg>
+                        <label for="modal_contacts_calculation" class="visually-hidden">
+                          Месенджер
+                        </label>
+                        <select id="modal_contacts_calculation" class="send__form-control send__form-control--select">
+                          <option value="viber">
+                            Viber
+                          </option>
+                          <option value="telegram">
+                            Telegram
+                          </option>
+                          <option value="whatsapp">
+                            WhatsApp
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="send__item">
+                      <label for="modal_calculation_phone" class="visually-hidden">
+                        Телефон
+                      </label>
+                      <input type="tel" name="modal-phone" class="send__form-control" placeholder="Номер телефона" id="modal_calculation_phone">
+                    </div>
+                    <div class="send__item send__item--submit">
+                      <button type="submit" class="button button--send">
+                        Узнать подробнее
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </form>
         </div>
@@ -236,7 +299,7 @@
   <section class="employees">
     <div class="employees__inner container">
       <div class="employees__left">
-        <h2 class="h2 h2--employees">
+        <h2 class="h2 h2--employees" id="employees">
           Лучшие сотрудники
         </h2>
         <div class="best-employees">
@@ -245,8 +308,8 @@
               <ul class="best-employees__list">
                 <li class="best-employees__item">
                   <picture>
-                    <img src="img/best-employees-1.jpg" width="100" height="100" alt="Райнис Григорий"
-                         class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-1.webp 1x">
+                    <img src="img/best-employees-1.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
@@ -265,8 +328,8 @@
                 </li>
                 <li class="best-employees__item">
                   <picture>
-                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Райнис Григорий"
-                         class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-2.webp 1x">
+                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
@@ -285,8 +348,8 @@
                 </li>
                 <li class="best-employees__item">
                   <picture>
-                    <img src="img/best-employees-3.jpg" width="100" height="100" alt="Райнис Григорий"
-                         class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-3.webp 1x">
+                    <img src="img/best-employees-3.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
@@ -305,8 +368,8 @@
                 </li>
                 <li class="best-employees__item">
                   <picture>
-                    <img src="img/best-employees-4.jpg" width="100" height="100" alt="Русакова Елена"
-                         class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-4.webp 1x">
+                    <img src="img/best-employees-4.jpg" width="100" height="100" alt="Русакова Елена" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
@@ -329,8 +392,8 @@
               <ul class="best-employees__list">
                 <li class="best-employees__item">
                   <picture>
-                    <img src="img/best-employees-1.jpg" width="100" height="100" alt="Райнис Григорий"
-                         class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-1.webp 1x">
+                    <img src="img/best-employees-1.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
@@ -349,8 +412,8 @@
                 </li>
                 <li class="best-employees__item">
                   <picture>
-                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Райнис Григорий"
-                         class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-2.webp 1x">
+                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
@@ -369,8 +432,8 @@
                 </li>
                 <li class="best-employees__item">
                   <picture>
-                    <img src="img/best-employees-3.jpg" width="100" height="100" alt="Райнис Григорий"
-                         class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-3.webp 1x">
+                    <img src="img/best-employees-3.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
@@ -389,8 +452,8 @@
                 </li>
                 <li class="best-employees__item">
                   <picture>
-                    <img src="img/best-employees-4.jpg" width="100" height="100" alt="Русакова Елена"
-                         class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-4.webp 1x">
+                    <img src="img/best-employees-4.jpg" width="100" height="100" alt="Русакова Елена" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
@@ -413,8 +476,8 @@
               <ul class="best-employees__list">
                 <li class="best-employees__item">
                   <picture>
-                    <img src="img/best-employees-1.jpg" width="100" height="100" alt="Райнис Григорий"
-                         class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-1.webp 1x">
+                    <img src="img/best-employees-1.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
@@ -433,8 +496,8 @@
                 </li>
                 <li class="best-employees__item">
                   <picture>
-                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Райнис Григорий"
-                         class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-2.webp 1x">
+                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
@@ -453,8 +516,8 @@
                 </li>
                 <li class="best-employees__item">
                   <picture>
-                    <img src="img/best-employees-3.jpg" width="100" height="100" alt="Райнис Григорий"
-                         class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-3.webp 1x">
+                    <img src="img/best-employees-3.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
@@ -473,8 +536,8 @@
                 </li>
                 <li class="best-employees__item">
                   <picture>
-                    <img src="img/best-employees-4.jpg" width="100" height="100" alt="Русакова Елена"
-                         class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-4.webp 1x">
+                    <img src="img/best-employees-4.jpg" width="100" height="100" alt="Русакова Елена" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
@@ -497,8 +560,8 @@
               <ul class="best-employees__list">
                 <li class="best-employees__item">
                   <picture>
-                    <img src="img/best-employees-1.jpg" width="100" height="100" alt="Райнис Григорий"
-                         class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-1.webp 1x">
+                    <img src="img/best-employees-1.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
@@ -517,8 +580,8 @@
                 </li>
                 <li class="best-employees__item">
                   <picture>
-                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Райнис Григорий"
-                         class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-2.webp 1x">
+                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
@@ -537,8 +600,8 @@
                 </li>
                 <li class="best-employees__item">
                   <picture>
-                    <img src="img/best-employees-3.jpg" width="100" height="100" alt="Райнис Григорий"
-                         class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-3.webp 1x">
+                    <img src="img/best-employees-3.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
@@ -557,8 +620,8 @@
                 </li>
                 <li class="best-employees__item">
                   <picture>
-                    <img src="img/best-employees-4.jpg" width="100" height="100" alt="Русакова Елена"
-                         class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-4.webp 1x">
+                    <img src="img/best-employees-4.jpg" width="100" height="100" alt="Русакова Елена" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
@@ -598,6 +661,7 @@
           <li class="leaders__item leaders__item--first">
             <div class="leaders__left">
               <picture>
+                <source type="image/webp" srcset="img/leaders-1.webp 1x">
                 <img src="img/leaders-1.jpg" width="60" height="61" alt="Беспалов Игорь" class="leaders__avatar">
               </picture>
             </div>
@@ -616,6 +680,7 @@
           <li class="leaders__item leaders__item--second">
             <div class="leaders__left">
               <picture>
+                <source type="image/webp" srcset="img/leaders-2.webp 1x">
                 <img src="img/leaders-2.jpg" width="60" height="61" alt="Туров Евгений" class="leaders__avatar">
               </picture>
             </div>
@@ -634,6 +699,7 @@
           <li class="leaders__item leaders__item--third">
             <div class="leaders__left">
               <picture>
+                <source type="image/webp" srcset="img/leaders-3.webp 1x">
                 <img src="img/leaders-3.jpg" width="60" height="61" alt="Туров Евгений" class="leaders__avatar">
               </picture>
             </div>
@@ -652,13 +718,13 @@
         </ul>
       </div>
       <div class="employees__details">
-        <a href="#" class="button button--employees">
+        <a href="#modal_try" class="button button--modal button--employees">
           Хочу попробовать
         </a>
       </div>
     </div>
   </section>
-  <section class="advantages">
+  <section class="advantages" id="advantages">
     <div class="advantages__inner container">
       <h2 class="h2 h2--advantages">
         Преимущества
@@ -717,7 +783,7 @@
       </ul>
     </div>
   </section>
-  <section class="work-steps">
+  <section class="work-steps" id="work-steps">
     <div class="work-steps__inner container">
       <h2 class="h2 h2--work-steps">
         Этапы работы
@@ -773,8 +839,8 @@
           <ul class="best-employees__list ">
             <li class="best-employees__item">
               <picture>
-                <img src="img/best-employees-3.jpg" width="100" height="100" alt="Райнис Григорий"
-                     class="best-employees__avatar">
+                <source type="image/webp" srcset="img/best-employees-3.webp 1x">
+                <img src="img/best-employees-3.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
               </picture>
               <div class="best-employees__info-block">
                 <p class="best-employees__name">
@@ -805,13 +871,13 @@
             </span>
           </p>
         </div>
-        <a href="#" class="button button--get-money">
+        <a href="#modal_try" class="button button--modal button--get-money">
           Хочу попробовать
         </a>
       </div>
     </div>
   </section>
-  <section class="money-output">
+  <section class="money-output" id="money-output">
     <div class="money-output__inner container">
       <div class="money-output__info-block">
         <h2 class="h2 h2--money-output">
@@ -868,7 +934,7 @@
       </div>
     </div>
   </section>
-  <section class="reviews">
+  <section class="reviews" id="reviews">
     <div class="reviews__inner container">
       <h2 class="h2 h2--reviews">
         Отзывы
@@ -1206,37 +1272,38 @@
   <div class="site-footer__inner site-footer__inner--top container">
     <div class="logo logo--footer">
       <picture>
+        <source type="image/webp" srcset="img/logo.webp 1x">
         <img src="img/logo.png" width="177" height="42" alt="Логотип сайта">
       </picture>
     </div>
     <ul class="menu menu--footer">
       <li class="menu__item">
-        <a href="#" class="menu__link">
+        <a href="#advantages" class="menu__link">
           Преумищества
         </a>
       </li>
       <li class="menu__item">
-        <a href="#" class="menu__link">
+        <a href="#money-output" class="menu__link">
           Как вывести деньги
         </a>
       </li>
       <li class="menu__item">
-        <a href="#" class="menu__link">
+        <a href="#your-earnings" class="menu__link">
           Заработок
         </a>
       </li>
       <li class="menu__item">
-        <a href="#" class="menu__link">
+        <a href="#work-steps" class="menu__link">
           Этапы работы
         </a>
       </li>
       <li class="menu__item">
-        <a href="#" class="menu__link">
+        <a href="#employees" class="menu__link">
           Лучшие сотрудники
         </a>
       </li>
       <li class="menu__item">
-        <a href="#" class="menu__link">
+        <a href="#reviews" class="menu__link">
           Отзывы
         </a>
       </li>
@@ -1285,6 +1352,65 @@
     </div>
   </div>
 </footer>
+<div class="modal" id="modal_try">
+  <div class="modal__content">
+    <button type="button" aria-label="Закрыть модальное окно" class="modal__close"></button>
+    <div class="send send--modal">
+      <p class="send__title">
+        Куда прислать подробную информацию?
+      </p>
+      <form action="send.php" method="post" autocomplete="off">
+        <div class="send__inner send__inner--modal">
+          <div class="send__item">
+            <div class="send__item--select">
+              <svg width="30" height="30" class="send__messenger-icon">
+                <use xlink:href="#icon-viber"></use>
+              </svg>
+              <label for="modal_contacts" class="visually-hidden">
+                Месенджер
+              </label>
+              <select id="modal_contacts" class="send__form-control send__form-control--select">
+                <option value="viber">
+                  Viber
+                </option>
+                <option value="telegram">
+                  Telegram
+                </option>
+                <option value="whatsapp">
+                  WhatsApp
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="send__item">
+            <label for="modal_phone" class="visually-hidden">
+              Телефон
+            </label>
+            <input type="tel" name="modal-phone" class="send__form-control" placeholder="Номер телефона" id="modal_phone">
+          </div>
+          <div class="send__item send__item--submit">
+            <button type="submit" class="button button--send">
+              Узнать подробнее
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="modal modal--thank-you" id="modal_thank-you">
+  <div class="modal__content">
+    <button type="button" aria-label="Закрыть модальное окно" class="modal__close"></button>
+    <div class="modal__inner">
+      <h2 class="h2 h2--thank-you">
+        Спасибо
+      </h2>
+      <p class="modal__description">
+        Подробная информация отправлена на выбранный Вами месседжер
+      </p>
+    </div>
+  </div>
+</div>
 <script src="js/scripts.min.js"></script>
 </body>
 </html>
