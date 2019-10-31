@@ -104,11 +104,12 @@ gulp.task("js-min", function () {
     "source/libs/slick/slick.min.js",
     "source/libs/nouslider/nouislider.js",
     "source/libs/picturefill/picture-fill.min.js",
+    "source/js/backend.js",
     "source/js/slider.js",
     "source/js/common.js"
   ])
     .pipe(concat("scripts.min.js"))
-    //.pipe(jsmin())
+    .pipe(jsmin())
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());
 });

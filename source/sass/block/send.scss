@@ -12,6 +12,22 @@
   color: $black-color;
 }
 
+.send--visible {
+  min-height: 412px;
+}
+
+.send--success {
+  display: flex;
+  flex-direction: column;
+}
+
+.send--success .send__hint {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
 .send__title {
   margin-top: 0;
   margin-bottom: 25px;
@@ -34,6 +50,7 @@
   padding: 0 18px;
   height: 45px;
   width: 100%;
+  background-color: $white-color;
   border: 2px solid $lite-gray-color;
   font-family: inherit;
   font-size: $base-font-size;
@@ -130,6 +147,10 @@
   display: block;
 }
 
+.send__hidden {
+  display: none;
+}
+
 .send__form-control--select::-ms-expand {
   display: none;
 }
@@ -138,6 +159,10 @@
   .send {
     top: -10px;
     padding: 40px 20px;
+  }
+
+  .send--visible {
+    min-height: 316px;
   }
 
   .send__title {

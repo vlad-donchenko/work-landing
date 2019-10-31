@@ -57,10 +57,10 @@
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
-  background-image: url("../img/get-money-background.png");
-  background-size: 737px 420px;
-  background-repeat: no-repeat;
-  background-position: 97% 15px;
+  background-image: url("../img/line.svg"), url("../img/get-money-background.png");
+  background-size: 476px 235px, 737px 420px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 366px 108px, 97% 15px;
 }
 
 @media (max-width: $tablet-large) {
@@ -70,8 +70,8 @@
   }
 
   .get-money__inner {
-    background-size: 50%;
-    background-position: 97% 130px;
+    background-size: 300px,50%;
+    background-position: 316px 178px,97% 130px;
   }
 
   .get-money__hint {

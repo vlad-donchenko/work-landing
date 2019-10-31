@@ -58,8 +58,12 @@
   }
 }
 
+.calculation__input input[type="number"] {
+  appearance: textfield;
+}
+
 .calculation__input--ours input {
-  width: 35px;
+  width: 55px;
 }
 
 .calculation__input::after {

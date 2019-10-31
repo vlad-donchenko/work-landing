@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>OnlineWork</title>
+  <link rel="icon" href="img/favicon.ico">
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -33,7 +34,7 @@
         <ul class="menu menu--header">
           <li class="menu__item">
             <a href="#advantages" class="menu__link">
-              Преумищества
+              Преимущества
             </a>
           </li>
           <li class="menu__item">
@@ -76,7 +77,7 @@
         <p class="send__title">
           Куда прислать подробную информацию?
         </p>
-        <form action="send.php" method="post" autocomplete="off">
+        <form action="send.php" method="post" autocomplete="off" id="send_promo">
           <div class="send__inner">
             <div class="send__item">
               <div class="send__item--select">
@@ -103,7 +104,7 @@
               <label for="send_phone" class="visually-hidden">
                 Телефон
               </label>
-              <input type="tel" name="send-phone" class="send__form-control" placeholder="Номер телефона" id="send_phone">
+              <input type="tel" name="send-phone" class="send__form-control" placeholder="Номер телефона" id="send_phone" required>
             </div>
             <div class="send__item send__item--submit">
               <button type="submit" class="button button--send">
@@ -206,7 +207,7 @@
           Данные, указанные в калькуляторе, носят информационный (ориентировочный) характер.
         </p>
         <div class="calculation calculation--your-earnings">
-          <form action="calculate.php" method="post">
+          <form action="calculate.php" method="post" id="your-earnings_calculation">
             <div class="calculation__item">
               <p class="calculation__text">
                 Сумма которую хотели бы зарабатывать
@@ -242,9 +243,6 @@
               <p class="calculation__sum" id="calculation_sum">
                 6 500₽
               </p>
-              <label for="calculation_total" class="visually-hidden">
-                Итог
-              </label>
               <input type="hidden" name="calculation_total" value="6500" id="calculation_total">
             </div>
             <div class="modal" id="modal_calculation">
@@ -280,7 +278,7 @@
                       <label for="modal_calculation_phone" class="visually-hidden">
                         Телефон
                       </label>
-                      <input type="tel" name="modal-phone" class="send__form-control" placeholder="Номер телефона" id="modal_calculation_phone">
+                      <input type="tel" name="modal-phone" class="send__form-control" placeholder="Номер телефона" id="modal_calculation_phone" required>
                     </div>
                     <div class="send__item send__item--submit">
                       <button type="submit" class="button button--send">
@@ -392,20 +390,40 @@
               <ul class="best-employees__list">
                 <li class="best-employees__item">
                   <picture>
-                    <source type="image/webp" srcset="img/best-employees-1.webp 1x">
-                    <img src="img/best-employees-1.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-5.webp 1x">
+                    <img src="img/best-employees-5.jpg" width="100" height="100" alt="Цецера Алла" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
-                      Райнис Григорий
+                      Цецера Алла
                     </p>
                     <p class="best-employees__location">
-                      Москва
+                      Беглород
                     </p>
                     <p class="best-employees__sum">
                       Заработал
                       <span>
-                      3 450 000₽
+                      2 098 000₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="best-employees__item">
+                  <picture>
+                    <source type="image/webp" srcset="img/best-employees-6.webp 1x">
+                    <img src="img/best-employees-6.jpg" width="100" height="100" alt="Фадеева Ирина" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Фадеева Ирина
+                    </p>
+                    <p class="best-employees__location">
+                      Курск
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработал
+                      <span>
+                      1 345 000₽
                     </span>
                     </p>
                   </div>
@@ -413,59 +431,39 @@
                 <li class="best-employees__item">
                   <picture>
                     <source type="image/webp" srcset="img/best-employees-2.webp 1x">
-                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
+                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Королев Станислав" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
-                      Таничев Сергей
+                      Королев Станислав
+                    </p>
+                    <p class="best-employees__location">
+                      Москва
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработал
+                      <span>
+                      1 300 000₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="best-employees__item">
+                  <picture>
+                    <source type="image/webp" srcset="img/best-employees-2.webp 1x">
+                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Игнатьев Владимир" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Игнатьев Владимир
                     </p>
                     <p class="best-employees__location">
                       Тюмень
                     </p>
                     <p class="best-employees__sum">
-                      Заработал
-                      <span>
-                      3 245 700₽
-                    </span>
-                    </p>
-                  </div>
-                </li>
-                <li class="best-employees__item">
-                  <picture>
-                    <source type="image/webp" srcset="img/best-employees-3.webp 1x">
-                    <img src="img/best-employees-3.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
-                  </picture>
-                  <div class="best-employees__info-block">
-                    <p class="best-employees__name">
-                      Максаков Павел
-                    </p>
-                    <p class="best-employees__location">
-                      Чита
-                    </p>
-                    <p class="best-employees__sum">
-                      Заработал
-                      <span>
-                      3125 000₽
-                    </span>
-                    </p>
-                  </div>
-                </li>
-                <li class="best-employees__item">
-                  <picture>
-                    <source type="image/webp" srcset="img/best-employees-4.webp 1x">
-                    <img src="img/best-employees-4.jpg" width="100" height="100" alt="Русакова Елена" class="best-employees__avatar">
-                  </picture>
-                  <div class="best-employees__info-block">
-                    <p class="best-employees__name">
-                      Русакова Елена
-                    </p>
-                    <p class="best-employees__location">
-                      Казань
-                    </p>
-                    <p class="best-employees__sum">
                       Заработала
                       <span>
-                      2 112 200₽
+                      1 273 500₽
                     </span>
                     </p>
                   </div>
@@ -476,20 +474,20 @@
               <ul class="best-employees__list">
                 <li class="best-employees__item">
                   <picture>
-                    <source type="image/webp" srcset="img/best-employees-1.webp 1x">
-                    <img src="img/best-employees-1.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
+                    <source type="image/webp" srcset="img/best-employees-7.webp 1x">
+                    <img src="img/best-employees-7.jpg" width="100" height="100" alt="Лыткина Инга" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
-                      Райнис Григорий
+                      Лыткина Инга
                     </p>
                     <p class="best-employees__location">
-                      Москва
+                      Липецк
                     </p>
                     <p class="best-employees__sum">
                       Заработал
                       <span>
-                      3 450 000₽
+                      1 591 000₽
                     </span>
                     </p>
                   </div>
@@ -497,75 +495,11 @@
                 <li class="best-employees__item">
                   <picture>
                     <source type="image/webp" srcset="img/best-employees-2.webp 1x">
-                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
+                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Маврин Сергей" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
-                      Таничев Сергей
-                    </p>
-                    <p class="best-employees__location">
-                      Тюмень
-                    </p>
-                    <p class="best-employees__sum">
-                      Заработал
-                      <span>
-                      3 245 700₽
-                    </span>
-                    </p>
-                  </div>
-                </li>
-                <li class="best-employees__item">
-                  <picture>
-                    <source type="image/webp" srcset="img/best-employees-3.webp 1x">
-                    <img src="img/best-employees-3.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
-                  </picture>
-                  <div class="best-employees__info-block">
-                    <p class="best-employees__name">
-                      Максаков Павел
-                    </p>
-                    <p class="best-employees__location">
-                      Чита
-                    </p>
-                    <p class="best-employees__sum">
-                      Заработал
-                      <span>
-                      3125 000₽
-                    </span>
-                    </p>
-                  </div>
-                </li>
-                <li class="best-employees__item">
-                  <picture>
-                    <source type="image/webp" srcset="img/best-employees-4.webp 1x">
-                    <img src="img/best-employees-4.jpg" width="100" height="100" alt="Русакова Елена" class="best-employees__avatar">
-                  </picture>
-                  <div class="best-employees__info-block">
-                    <p class="best-employees__name">
-                      Русакова Елена
-                    </p>
-                    <p class="best-employees__location">
-                      Казань
-                    </p>
-                    <p class="best-employees__sum">
-                      Заработала
-                      <span>
-                      2 112 200₽
-                    </span>
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="best-employees__element">
-              <ul class="best-employees__list">
-                <li class="best-employees__item">
-                  <picture>
-                    <source type="image/webp" srcset="img/best-employees-1.webp 1x">
-                    <img src="img/best-employees-1.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
-                  </picture>
-                  <div class="best-employees__info-block">
-                    <p class="best-employees__name">
-                      Райнис Григорий
+                      Маврин Сергей
                     </p>
                     <p class="best-employees__location">
                       Москва
@@ -573,7 +507,27 @@
                     <p class="best-employees__sum">
                       Заработал
                       <span>
-                      3 450 000₽
+                      1 500 000₽
+                    </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="best-employees__item">
+                  <picture>
+                    <source type="image/webp" srcset="img/best-employees-8.webp 1x">
+                    <img src="img/best-employees-8.jpg" width="100" height="100" alt="Дашко Катерина" class="best-employees__avatar">
+                  </picture>
+                  <div class="best-employees__info-block">
+                    <p class="best-employees__name">
+                      Дашко Катерина
+                    </p>
+                    <p class="best-employees__location">
+                      Норильск
+                    </p>
+                    <p class="best-employees__sum">
+                      Заработал
+                      <span>
+                      983 900₽
                     </span>
                     </p>
                   </div>
@@ -581,59 +535,19 @@
                 <li class="best-employees__item">
                   <picture>
                     <source type="image/webp" srcset="img/best-employees-2.webp 1x">
-                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
+                    <img src="img/best-employees-2.jpg" width="100" height="100" alt="Нестор" class="best-employees__avatar">
                   </picture>
                   <div class="best-employees__info-block">
                     <p class="best-employees__name">
-                      Таничев Сергей
+                      Нестор
                     </p>
                     <p class="best-employees__location">
-                      Тюмень
-                    </p>
-                    <p class="best-employees__sum">
-                      Заработал
-                      <span>
-                      3 245 700₽
-                    </span>
-                    </p>
-                  </div>
-                </li>
-                <li class="best-employees__item">
-                  <picture>
-                    <source type="image/webp" srcset="img/best-employees-3.webp 1x">
-                    <img src="img/best-employees-3.jpg" width="100" height="100" alt="Райнис Григорий" class="best-employees__avatar">
-                  </picture>
-                  <div class="best-employees__info-block">
-                    <p class="best-employees__name">
-                      Максаков Павел
-                    </p>
-                    <p class="best-employees__location">
-                      Чита
-                    </p>
-                    <p class="best-employees__sum">
-                      Заработал
-                      <span>
-                      3125 000₽
-                    </span>
-                    </p>
-                  </div>
-                </li>
-                <li class="best-employees__item">
-                  <picture>
-                    <source type="image/webp" srcset="img/best-employees-4.webp 1x">
-                    <img src="img/best-employees-4.jpg" width="100" height="100" alt="Русакова Елена" class="best-employees__avatar">
-                  </picture>
-                  <div class="best-employees__info-block">
-                    <p class="best-employees__name">
-                      Русакова Елена
-                    </p>
-                    <p class="best-employees__location">
-                      Казань
+                      Абакан
                     </p>
                     <p class="best-employees__sum">
                       Заработала
                       <span>
-                      2 112 200₽
+                      763 900₽
                     </span>
                     </p>
                   </div>
@@ -888,47 +802,50 @@
         </p>
         <ul class="money-output__list">
           <li>
-          <span>
-            Skrill
-          </span>
+            <span>
+              Skrill
+            </span>
             (moneybookers)
           </li>
           <li>
-          <span>
-            Visa
-          </span>
+            <span>
+              Visa
+            </span>
             - любая карта формата visa.
           </li>
           <li>
-          <span>
-            MasterCard
+            <span>
+              MasterCard
             </span>
             - карта любого банка формата MasterCard
           </li>
           <li>
-            Счет иностранного банка - счет в любом иностранном банке оффшорной зоны.
+            <span>
+              Счет иностранного банка
+            </span>
+              - счет в любом иностранном банке оффшорной зоны.
           </li>
           <li>
-          <span>
-          Webmoney
-          </span>
+            <span>
+              Webmoney
+            </span>
             - платежная система, популярная в СНГ.
           </li>
           <li>
-          <span>
-            Moneta
-          </span>- умирающая платежная система, некогда популярная в СНГ.
+            <span>
+              Moneta
+            </span>
+            - платежная система, некогда популярная в СНГ.
           </li>
           <li>
-          <span>
-            Qiwi
-          </span>
-            - не рекомендуем использовать для перевода крупных сумм.
+            <span>
+              Qiwi
+            </span>
           </li>
           <li>
-          <span>
-            Yandex кошелек
-          </span>
+            <span>
+              Yandex кошелек
+            </span>
           </li>
         </ul>
       </div>
@@ -970,14 +887,16 @@
               </li>
             </ul>
             <p class="reviews__text">
-              Мне сейчас 31 год и только недавно я пришла к ощущению полного счастья! Считаю, что женщина должна жить в
-              гармонии с собой, быть интересной прежде всего самой себе, самодостаточной
+              Сотрудничество с компанией предоставило мне возможность заниматься
+              любимым делом и быть финансово независимой, поэтому я успеваю работать,
+              уделять внимание детям и не забываю про свои желания.
               <br>
-              и зарабатывать ровно столько, чтобы хватало
-              на красоту -внешнюю и внутреннюю.
+              Думаю, каждая женщина будет рада реализовать себя так, потому что не нужно
+              ставать «мужиком в юбке» и впахивать на работе и дома, чтобы быть
+              обеспеченной)))
             </p>
             <p class="reviews__author">
-              Соня Чижова
+              Морозова Анна
             </p>
           </div>
           <div class="reviews__item">
@@ -1009,14 +928,14 @@
               </li>
             </ul>
             <p class="reviews__text">
-              Мне сейчас 31 год и только недавно я пришла к ощущению полного счастья! Считаю, что женщина должна жить в
-              гармонии с собой, быть интересной прежде всего самой себе, самодостаточной
+              На личной странице представителя в круглосуточном режиме доступны онлайн
+              обучение не только по самой работе, но и по улучшению навыков.
               <br>
-              и зарабатывать ровно столько, чтобы хватало
-              на красоту -внешнюю и внутреннюю.
+              Все просто, есть все инструменты, которые помогут, не выходя из дома, стать
+              настоящим специалистом. Отдельное спасибо техподдержке!
             </p>
             <p class="reviews__author">
-              Соня Чижова
+              Лыткина Ольга
             </p>
           </div>
           <div class="reviews__item">
@@ -1048,14 +967,12 @@
               </li>
             </ul>
             <p class="reviews__text">
-              Мне сейчас 31 год и только недавно я пришла к ощущению полного счастья! Считаю, что женщина должна жить в
-              гармонии с собой, быть интересной прежде всего самой себе, самодостаточной
-              <br>
-              и зарабатывать ровно столько, чтобы хватало
-              на красоту -внешнюю и внутреннюю.
+              Работая в компании нужно больше времени уделять обучению и саморазвитию,
+              чтобы получать больше. Коллектив очень отзывчив. На сайтах компании есть
+              полное обучение новых сотрудников и вся нужная информация.
             </p>
             <p class="reviews__author">
-              Соня Чижова
+              Савин Олег
             </p>
           </div>
           <div class="reviews__item">
@@ -1087,14 +1004,14 @@
               </li>
             </ul>
             <p class="reviews__text">
-              Мне сейчас 31 год и только недавно я пришла к ощущению полного счастья! Считаю, что женщина должна жить в
-              гармонии с собой, быть интересной прежде всего самой себе, самодостаточной
-              <br>
-              и зарабатывать ровно столько, чтобы хватало
-              на красоту -внешнюю и внутреннюю.
+              Рада, что нашла эту компанию после стольких поисков. Абсолютно нет ничего
+              сложного. Если работать в начале по 2 часа в сутки, то все понятно и ясно.
+              Через 2 недели приобрела хороший ноутбук и уже работала на полную. Теперь
+              без проблем могу позволить не только ноутбук, но машину и уже собираю на
+              дом!
             </p>
             <p class="reviews__author">
-              Соня Чижова
+              Валентина Синюк
             </p>
           </div>
           <div class="reviews__item">
@@ -1126,14 +1043,14 @@
               </li>
             </ul>
             <p class="reviews__text">
-              Мне сейчас 31 год и только недавно я пришла к ощущению полного счастья! Считаю, что женщина должна жить в
-              гармонии с собой, быть интересной прежде всего самой себе, самодостаточной
-              <br>
-              и зарабатывать ровно столько, чтобы хватало
-              на красоту -внешнюю и внутреннюю.
+              Узнал о компании от друга, подключился и после прохождения с менеджером
+              обучения, понял что все реально. Получать дополнительный доход или строить
+              карьеру, развивая собственный бизнес – я решаю сам! Я полностью доволен и
+              наслаждаюсь тем что делаю. Советую всем знакомым, все начинается с одного
+              простого шага - присоединяйтесь!
             </p>
             <p class="reviews__author">
-              Соня Чижова
+              Шилов Андрей
             </p>
           </div>
           <div class="reviews__item">
@@ -1165,14 +1082,15 @@
               </li>
             </ul>
             <p class="reviews__text">
-              Мне сейчас 31 год и только недавно я пришла к ощущению полного счастья! Считаю, что женщина должна жить в
-              гармонии с собой, быть интересной прежде всего самой себе, самодостаточной
-              <br>
-              и зарабатывать ровно столько, чтобы хватало
-              на красоту -внешнюю и внутреннюю.
+              Всегда мечтала о собственном деле, путешествовать по миру и уделять больше
+              времени семьи, но думала что для этого нужно постоянно работать, стремится к
+              росту по карьерной лестнице и т.д… Но в один момент поняла, что каждый день
+              для меня – это «день сурка», а все мечты откладываются на потом.
+              Уже прошло 2 года, как я в компании - это то, что позволило
+              воплотить мечты в жизнь, получить свой доход!
             </p>
             <p class="reviews__author">
-              Соня Чижова
+              Русакова Елена
             </p>
           </div>
           <div class="reviews__item">
@@ -1204,14 +1122,15 @@
               </li>
             </ul>
             <p class="reviews__text">
-              Мне сейчас 31 год и только недавно я пришла к ощущению полного счастья! Считаю, что женщина должна жить в
-              гармонии с собой, быть интересной прежде всего самой себе, самодостаточной
-              <br>
-              и зарабатывать ровно столько, чтобы хватало
-              на красоту -внешнюю и внутреннюю.
+              Я учился на третьем курсе юридического. Вариантов для студента было
+              немного, а заработать себе на карманные хотелось. Подработки за гроши
+              надоели, полез искать решение в интернет, оставил заявку на сайте и после
+              обучения начал быстро зарабатывать, всего несколько часов в день и чувствовал
+              себя прекрасно в финансовом плане. После учебы занялся более серьезно и
+              теперь не думаю даже о наемной работе!
             </p>
             <p class="reviews__author">
-              Соня Чижова
+              Логинов Павел
             </p>
           </div>
           <div class="reviews__item">
@@ -1243,14 +1162,53 @@
               </li>
             </ul>
             <p class="reviews__text">
-              Мне сейчас 31 год и только недавно я пришла к ощущению полного счастья! Считаю, что женщина должна жить в
-              гармонии с собой, быть интересной прежде всего самой себе, самодостаточной
-              <br>
-              и зарабатывать ровно столько, чтобы хватало
-              на красоту -внешнюю и внутреннюю.
+              Если вы сомневаетесь и думаете, что у вас недостаточно знаний для создания
+              бизнеса - не переживайте, вам будут даны все инструкции для быстрого роста,
+              вам следует только выполнять все рекомендации, и вы убедитесь что все на
+              самом деле просто!
             </p>
             <p class="reviews__author">
-              Соня Чижова
+              Ефимов Александр
+            </p>
+          </div>
+          <div class="reviews__item">
+            <ul class="reviews__rating">
+              <li>
+                <svg width="20" height="20" class="reviews__star reviews__star--full">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20" class="reviews__star reviews__star--full">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20" class="reviews__star reviews__star--full">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20" class="reviews__star reviews__star--full">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20" class="reviews__star reviews__star--full">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </li>
+            </ul>
+            <p class="reviews__text">
+              Любой маме в декретном отпуске, подработка, ой как нужна. Меня достал этот
+              спам про впаривание товаров, продажу товаров или косметики и т.д. Я состояла
+              в группе мам, где выложили пост о том, как реально провести время в декрете с
+              пользой. Решила попробовать себя в этом, и результаты меня радовали каждый
+              день больше и больше. Зарабатываю даже сегожКогда есть уверенность в
+              завтрашнем дне, то и думаешь по-другому.
+            </p>
+            <p class="reviews__author">
+              Горшкова Лилия
             </p>
           </div>
         </div>
@@ -1279,7 +1237,7 @@
     <ul class="menu menu--footer">
       <li class="menu__item">
         <a href="#advantages" class="menu__link">
-          Преумищества
+          Преимущества
         </a>
       </li>
       <li class="menu__item">
@@ -1346,7 +1304,7 @@
   </div>
   <div class="site-footer__wrapper">
     <div class="container">
-      <a href="#" target="_blank" class="site-footer__political">
+      <a href="https://docs.google.com/document/d/1Bd9ipc6B7fpUNi0HKgADYZ3Lmi5X9u22CO-fVSnIgTs/edit" target="_blank" class="site-footer__political">
         Политика конфиденциальности
       </a>
     </div>
@@ -1359,7 +1317,7 @@
       <p class="send__title">
         Куда прислать подробную информацию?
       </p>
-      <form action="send.php" method="post" autocomplete="off">
+      <form action="send.php" method="post" autocomplete="off" id="form_try">
         <div class="send__inner send__inner--modal">
           <div class="send__item">
             <div class="send__item--select">
@@ -1386,7 +1344,7 @@
             <label for="modal_phone" class="visually-hidden">
               Телефон
             </label>
-            <input type="tel" name="modal-phone" class="send__form-control" placeholder="Номер телефона" id="modal_phone">
+            <input type="tel" name="modal-phone" class="send__form-control" placeholder="Номер телефона" id="modal_phone" required>
           </div>
           <div class="send__item send__item--submit">
             <button type="submit" class="button button--send">
