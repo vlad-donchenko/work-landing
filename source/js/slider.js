@@ -36,8 +36,9 @@
   var calculator = function (sum, ours) {
     var calculatorSum = document.querySelector('#calculation_sum');
     var calculation_total = document.querySelector('#calculation_total');
-    calculation_total.value = Math.round(CALCULATOR_FORMULA_NUMBER_ONE + parseInt(sum) / CALCULATOR_FORMULA_NUMBER_TWO * parseInt(ours));
-    calculatorSum.textContent = Math.round(CALCULATOR_FORMULA_NUMBER_ONE + parseInt(sum) / CALCULATOR_FORMULA_NUMBER_TWO * parseInt(ours)) + '₽';
+    var sum = Math.round(CALCULATOR_FORMULA_NUMBER_ONE + parseInt(sum) / CALCULATOR_FORMULA_NUMBER_TWO * parseInt(ours));
+    calculation_total.value = sum;
+    calculatorSum.textContent = sum.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&\ ') + '₽';
   };
 
   calculator(sumInput.value, ourInput.value);

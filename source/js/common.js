@@ -144,13 +144,6 @@
     nextArrow: $('.reviews__arrow--next'),
     responsive: [
       {
-        breakpoint: 1340,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-      },
-      {
         breakpoint: 991,
         settings: {
           infinite: true
